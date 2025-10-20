@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2022",                          /* JavaScript version to compile to */
+    "lib": ["ES2022"],                           /* Standard library APIs available */
+
+    /* Modules */
+    "module": "commonjs",                        /* Module system (CommonJS for Node.js) */
+    "rootDir": "./src",                          /* Source files location */
+    "outDir": "./dist",                          /* Compiled files output location */
+    "declaration": true,                         /* Generate .d.ts files for TypeScript users */
+    "declarationMap": true,                      /* Source maps for .d.ts files */
+    "sourceMap": true,                           /* Generate source maps for debugging */
+
+    /* Interop Constraints */
+    "esModuleInterop": true,                     /* Better CommonJS/ES Module compatibility */
+    "allowSyntheticDefaultImports": true,        /* Allow default imports from modules */
+    "forceConsistentCasingInFileNames": true,    /* Ensure consistent file name casing */
+
+    /* Type Checking */
+    "strict": true,                              /* Enable all strict type checking options */
+    "noImplicitAny": true,                       /* Error on expressions with 'any' type */
+    "strictNullChecks": true,                    /* Strict null checking */
+    "strictFunctionTypes": true,                 /* Strict function type checking */
+    "noUnusedLocals": true,                      /* Error on unused local variables */
+    "noUnusedParameters": true,                  /* Error on unused parameters */
+    "noImplicitReturns": true,                   /* Error when not all code paths return */
+    "noFallthroughCasesInSwitch": true,         /* Error on fallthrough switch cases */
+
+    /* Completeness */
+    "skipLibCheck": true                         /* Skip type checking of declaration files */
+  },
+  "include": [
+    "src/**/*"                                   /* Include all files in src directory */
+  ],
+  "exclude": [
+    "node_modules",                              /* Exclude dependencies */
+    "dist",                                      /* Exclude build output */
+    "**/*.test.ts"                               /* Tests are not included in build */
+  ]
+}
